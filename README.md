@@ -20,7 +20,7 @@ I did not pursue a deep neural network for this assignment because the dataset i
 # Section C: Evaluation & Threshold
 ## C1. Recommended Operating Threshold
 
-Operating threshold: 0.712713. Pets with predicted probability ≥ 0.712713 are flagged. This corresponds to selecting the top 300 highest-risk pets in the validation population. Because selection is ranking-based, the threshold will dynamically adjust in future scoring cycles.
+Operating threshold: 0.718613. Pets with predicted probability ≥ 0.718613 are flagged. This corresponds to selecting the top 300 highest-risk pets in the validation population. Because selection is ranking-based, the threshold will dynamically adjust in future scoring cycles.
 
 ## C2. Pets Flagged Per Week
 
@@ -28,7 +28,7 @@ Approximately 300 pets per scoring cycle. If scoring is weekly → ~300 per week
 
 ## C3. Plain-Language Interpretation for the Preventative Care Team
 
-At the current operating threshold, where we select the top 300 highest-risk pets, Precision@300 is approximately 24–30%, meaning roughly one in four flagged pets is expected to lodge a high-cost claim within 90 days if no intervention occurs. This corresponds to a Lift@300 of around 3.7×, indicating the team is approximately three to four times more likely to contact a genuinely high-risk pet compared to random selection. If the business wished to capture more at-risk pets, the threshold could be lowered from 0.7127 to, for example, 0.65. This would increase the flagged population to roughly 500 pets and capture around 100 true high-cost cases instead of 75, but precision would fall to about 20%, meaning an additional 200 lower-risk pets would also be contacted. The trade-off is clear: lowering the threshold increases recall but reduces precision and raises operational workload. Ideally, the operating point should not be determined solely by a fixed capacity constraint, but instead by maximising expected net value — balancing the anticipated savings from prevented high-cost claims against the cost of outreach interventions.
+At the current operating threshold, where we select the top 300 highest-risk pets, Precision@300 is approximately 27–33%, meaning roughly 3 in 10 flagged pets is expected to lodge a high-cost claim within 90 days if no intervention occurs. This corresponds to a Lift@300 of around 3.7×, indicating the team is approximately three to four times more likely to contact a genuinely high-risk pet compared to random selection. If the business wished to capture more at-risk pets, the threshold could be lowered from 0.718613 to, for example, 0.65. This would increase the flagged population to roughly 500 pets and capture around 100 true high-cost cases instead of 75, but precision would fall to about 20%, meaning an additional 200 lower-risk pets would also be contacted. The trade-off is clear: lowering the threshold increases recall but reduces precision and raises operational workload. Ideally, the operating point should not be determined solely by a fixed capacity constraint, but instead by maximising expected net value — balancing the anticipated savings from prevented high-cost claims against the cost of outreach interventions.
 
 # Section D: Deployment Recommendation
 ## D1. Deploy Next Month?
