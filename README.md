@@ -11,7 +11,7 @@ The current definition of a high-cost claim is any claim greater than $2,000 occ
 # Section B: Model Choice
 ## B1. Model Selected for Deployment
 
-I chose XGBoost. Beyond delivering stronger PR-AUC than logistic regression on the 1st iteration, it was better suited to this problem because the assignment required accurate ranking in the extreme tail for a capacity-constrained Top-300 selection. The data exhibited clear non-linear threshold effects and interaction patterns — such as age acceleration and severity breakpoints — which logistic regression would require manual feature engineering to capture. XGBoost learns these non-linearities and interactions automatically, handles missing values and class imbalance effectively. For this operational ranking use case, it provided both strong performance and great stability.
+I chose XGBoost. Beyond delivering stronger precision and lift than logistic regression on the 1st iteration, it was better suited to this problem because the assignment required accurate ranking in the extreme tail for a capacity-constrained Top-300 selection. The data exhibited clear non-linear threshold effects and interaction patterns — such as age acceleration and severity breakpoints — which logistic regression would require manual feature engineering to capture. XGBoost learns these non-linearities and interactions automatically, handles missing values and class imbalance effectively. For this operational ranking use case, it provided both strong performance and great stability.
 
 ## B2. Model Deliberately Not Tried
 
