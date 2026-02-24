@@ -252,4 +252,8 @@ It is suitable for controlled deployment with structured outcome tracking.
 
 # Underwriting and pricing
 
+## Pricing Review – Cohort Alignment Analysis
+
+A cohort-level pricing alignment review indicates material misalignment between observed high-cost risk and premium relativities, particularly in senior pets. The 10+ age band exhibits a high-cost claim rate of 19.5%, representing 2.48× portfolio risk, while premiums are only 1.39× portfolio average, resulting in a pricing alignment ratio of 1.78. This suggests risk is increasing approximately 78% faster than premium, indicating potential underpricing in this segment. The 7–10 age band shows a milder but similar pattern (alignment ratio 1.08). Conversely, younger cohorts appear to cross-subsidise older pets: the 0–1 age band has a risk level of 0.52× portfolio but pays 0.89× portfolio premium, producing an alignment ratio of 0.59, suggesting relative overpricing. Breed-level analysis reveals further tension: Working and Hound groups show alignment ratios of 1.29 and 1.33 respectively, indicating premiums may not fully reflect elevated risk, while Mixed and Domestic Longhair segments appear moderately overpriced (alignment ratios 0.80 and 0.76). Weight bands are broadly aligned, with only minor deviation in large breeds (alignment 1.12). Overall, the primary structural pricing pressure lies in senior pets and certain high-risk breed groups, suggesting targeted review of age and breed relativities may be warranted to improve actuarial alignment while managing potential cross-subsidisation across cohorts.
+
 
