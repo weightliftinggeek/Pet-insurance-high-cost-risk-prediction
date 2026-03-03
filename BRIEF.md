@@ -1,12 +1,12 @@
 # ML Engineer Case Study — Pet Health Risk Prediction
 
-**PetSure | ML Solutions Team**
+**Pet insurance company**
 
 ---
 
 ## Part 1: Business Context
 
-PetSure wants to proactively identify pets at risk of a high-cost insurance claim in the next 90 days. There are two business consumers for this model:
+The company wants to proactively identify pets at risk of a high-cost insurance claim in the next 90 days. There are two business consumers for this model:
 
 - **Preventative Care team:** They will send nudge communications (email/SMS) to pet parents of flagged pets. They have capacity to contact a maximum of **300 pet parents per week**. False positives waste budget and annoy customers. False negatives mean missed intervention opportunities.
 - **Underwriting & Pricing:** They want to understand risk drivers at a cohort level to inform pricing reviews. They do not act on individual predictions; they need aggregate feature importance and risk segmentation.
@@ -15,11 +15,11 @@ PetSure wants to proactively identify pets at risk of a high-cost insurance clai
 
 ---
 
-## Part 2: What You Receive
+## Part 2: What are provided
 
 ### 2.1 The Dataset
 
-You will receive a CSV file (`pet_health_risk_dataset.csv`) with approximately 25,000 rows and a number of columns. The dataset is synthetic but modelled on realistic distributions. It includes:
+A CSV file (`pet_health_risk_dataset.csv`) with approximately 25,000 rows and a number of columns. The dataset is synthetic but modelled on realistic distributions. It includes:
 
 - Pet demographics (species, breed group, age band, weight band, desexed status)
 - Policy details (cover type, tenure in months, excess amount, premium band)
@@ -31,7 +31,7 @@ You will receive a CSV file (`pet_health_risk_dataset.csv`) with approximately 2
 
 ### 2.2 Data Dictionary 
 
-You will receive a data dictionary (`data_dictionary.md`).
+A data dictionary (`data_dictionary.md`).
 
 ---
 
@@ -39,34 +39,30 @@ You will receive a data dictionary (`data_dictionary.md`).
 
 ### 3.1 Technical Artefact
 
-Submit either a Jupyter notebook or a small repository with a README. You can invite me to view your repo `@bryce-ram`
+A Jupyter notebook or a small repository with a README.
 
 #### EDA (Focused)
 
 - Perform EDA on the dataset provided. 
-- We are not looking for exhaustive plotting of every feature. Show us the **5–7 most important things you found** in the data.
 
 #### Feature Engineering
 
-- Document every feature you created, dropped, or transformed, and why.
+- Document every feature created, dropped, or transformed, and why.
 
 #### Model Training & Evaluation
 
 - Train a model to solve the business problem 
-- Validate your model with the appropriate metric, justify your decision as it relates to the problem  
-- Justify why you chose that threshold
+- Validate the model with the appropriate metric, justify the decision as it relates to the problem  
+- Justify why the model was chosen with that threshold
 
 ---
 
 ### 3.2 Decision Memo (Max 2 Pages)
 
-This memo must contain **concrete answers, not hedged discussions**. Where a question asks for a number or a yes/no, provide one.
-
-
 #### Section A: Problem Framing
 
 - **A1.** State the exact business action this model enables. Who does what differently because this model exists?
-- **A2.** What definition of "high cost" did you use, and would you change it if you could? Why?
+- **A2.** What definition of "high cost" was used, and would I change it if I could? Why?
 
 #### Section B: Model Choice
 
@@ -75,24 +71,17 @@ This memo must contain **concrete answers, not hedged discussions**. Where a que
 
 #### Section C: Evaluation & Threshold
 
-- **C1.** State your recommended operating threshold
+- **C1.** State the recommended operating threshold
 - **C2.** At that threshold, how many pets per week would be flagged (approximately)? 
-- **C3.** Given your evaluation metric, what does this mean in plain language for the Preventative Care team?
-- **C4.** If the business said "we want to catch more at-risk pets even if it means more false positives", which direction would you move the threshold and what would the impact be? 
+- **C3.** Given the evaluation metric, what does this mean in plain language for the Preventative Care team?
+- **C4.** If the business said "we want to catch more at-risk pets even if it means more false positives", which direction should we move the threshold and what would the impact be? 
 
 #### Section D: Deployment Recommendation
 
-- **D1.** Would you recommend deploying this model to the Preventative Care team next month? Answer **yes or no**, then justify.
+- **D1.** Would you recommend deploying this model to the Preventative Care team next month?
 - **D2.** What is the single biggest risk if this model is deployed as-is?
-- **D3.** Describe one specific monitoring check you would run weekly post-deployment. What metric, what threshold for alerting, and what action would you take if the alert fires?
+- **D3.** Describe one specific monitoring check that should be run weekly post-deployment. What metric, what threshold for alerting, and what action should be taken if the alert fires?
 
 
----
-
-## Part 4: Constraints
-
-- **Time:** 3–4 days from receipt of the dataset.
-- **Tools:** You may use any tools, including AI assistants. However, you must be able to explain every decision in the live walkthrough.
-- **Scope:** We do not expect a production-ready system. We expect clear thinking, honest assessment of limitations, and specific recommendations.
 
 
